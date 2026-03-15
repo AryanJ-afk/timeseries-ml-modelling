@@ -3,6 +3,7 @@ import numpy as np
 import joblib
 from xgboost import XGBRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
+import os
 
 
 def create_features(series: pd.Series) -> pd.DataFrame:
@@ -77,4 +78,5 @@ def train_forecasting_model(path: str):
 
 
 if __name__ == "__main__":
+    os.makedirs("models", exist_ok=True)
     train_forecasting_model("data/processed/hourly_demand.csv")

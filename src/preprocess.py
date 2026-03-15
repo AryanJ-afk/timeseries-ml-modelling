@@ -1,5 +1,6 @@
 import pandas as pd
 from load_data import load_dataset
+import os
 
 
 def create_hourly_series(path):
@@ -23,5 +24,5 @@ if __name__ == "__main__":
 
     print(hourly.head())
     print(hourly.describe())
-
+    os.makedirs("data/processed", exist_ok=True)
     hourly.to_csv("data/processed/hourly_demand.csv")
