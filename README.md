@@ -168,10 +168,9 @@ ts-ml-monitoring/
 │&emsp;&emsp;&emsp;└── static/  
 │  
 │── src/ &emsp;&emsp;                model training and   experimentation  
-│&emsp;&emsp;   ├── train_model.py  
+│&emsp;&emsp;   ├── load_data.py  
 │&emsp;&emsp;   ├── preprocess.py  
-│&emsp;&emsp;   ├── simulate_stream.py  
-│&emsp;&emsp;   └── visualize_monitoring.py  
+│&emsp;&emsp;   └── train_model.py  
 │  
 │── data/  
 │&emsp;&emsp;   ├── raw/  
